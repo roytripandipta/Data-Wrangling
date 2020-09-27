@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en" ng-csp>
+<head>
+
+  <title>Editor | Mode</title>
+  <base href="/" />
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+  <link rel="search" href="/opensearch.xml" type="application/opensearchdescription+xml" title="Mode" />
+
+    <link rel="apple-touch-icon" sizes="60x60" href="//app-assets.mode.com/assets/apple-touch-icon-60-5fe92329cae92400ee6c426a396df4d351c34ebe4c33ca05e8f8da3771622d07.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="//app-assets.mode.com/assets/apple-touch-icon-76-691ee600a5ecf8bd9193c5ee2bf2f18637cb928babd28bf438ec175d1f6af529.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="//app-assets.mode.com/assets/apple-touch-icon-120-322548a5b92a920245ec6080b3953ea5bdc497042ff076005c3cda927177a3ba.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="//app-assets.mode.com/assets/apple-touch-icon-152-e3ae79d3ab59f3738c6ba64156ad43aa0e72f1811ac819ff5e510ccb854d70b8.png">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+  <link rel="preload" href="/fonts/graphik/graphik-regular-web.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/fonts/graphik/graphik-medium-web.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/fonts/graphik/graphik-light-web.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/fonts/graphik/graphik-regularitalic-web.woff2" as="font" type="font/woff2" crossorigin />
+
+  <link rel="preload stylesheet" href="/fonts.css" as="style" />
+
+  <link rel="stylesheet" media="all" href="//app-assets.mode.com/assets/lib-c7e80ba62c15efec0648b3f1662d3303caadf77dd0e025eabd71d00f83a61d35.css" debug="false" />
+  <link rel="stylesheet" media="all" href="//app-assets.mode.com/assets/application-0d4f9a2852641999dceb4732365ed48cc7c5499286bae194fab55855ea8f2dc1.css" debug="false" />
+
+  <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="O+4kTXFOxgF9X/gUL7eZ1qESbCFtsvTdAcfSTSVLMTx9A7bXOOck75G30goV5GsU1kawwV7BTHGUMjAbMZFlIQ==" />
+
+    <meta name="og:site_name" content="Mode" />
+    <meta name="og:locale" content="en_US" />
+    <meta name="flamingo-host" content="app.mode.com" />
+    <meta name="launch-darkly-client-id" content="5b28465b9a879f37dfa0c746" />
+    <meta name="launch-darkly-env" content="production" />
+    <meta name="current-username" content="roytripandipta" />
+    <meta name="account-entry-path" content="/api{/username}" />
+    <meta name="api-entry-path" content="/api" />
+    <meta name="algolia-id" content="CJVV4GGBGZ" />
+    <meta name="algolia-user-token" content="User:23412c36467f" />
+    <meta name="pusher-key" content="e586e2c7708381de6fb8" />
+    <meta name="owner-username" content="roytripan" />
+    <meta name="search-settings" content="/api/search_settings/roytripan" />
+    <meta name="trial-banner" content="trial_pending" />
+    <meta name="use-refactored-editor-routes" content="false" />
+    <meta name="editor-showcase" content="tutorial" />
+    <meta name="report-owner-username" content="roytripan" />
+
+  <script>
+  window.dataLayer = [{
+    features: ["flamingo_access"],
+    orgFeatures:  {"roytripan":["flamingo_access"]}
+  }]
+</script>
+
+  <script src="//d2wy8f7a9ursnm.cloudfront.net/v4/bugsnag.min.js"></script>
+<script>
+  if (window.hasOwnProperty('bugsnag')) {
+    window.bugsnagClient = window.bugsnag({
+      apiKey: 'fedf74e6f75ad971843c3bdf45aa305b',
+      autoCaptureSessions: true,
+      releaseStage: 'production',
+      interactionBreadcrumbsEnabled: false,
+      networkBreadcrumbsEnabled: false, // redundant with the action breadcrumbs
+      maxBreadcrumbs: 40,
+      notifyReleaseStages: ["development", "staging", "production"],
+      metaData: {
+        context: {
+          type: 'organization',
+          name: 'roytripan',
+          plan_code: 'free',
+        },
+      },
+      user: {
+        id: '548263',
+        name: 'Tripan Dipta Roy',
+        email: 'roytripandipta@gmail.com',
+        logged_in: 'true'
+      }
+    });
+  }
+</script>
+
+  <script>
+  !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t,e){var n=document.createElement("script");n.type="text/javascript";n.async=!0;n.src="https://cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(n,a);analytics._loadOptions=e};analytics.SNIPPET_VERSION="4.1.0";
+    var analyticsOpts = {
+      integrations: {
+        Marketo: false,
+        Intercom: false,
+      }
+    };
+
+    function windowAnalyticsIdentify(opts) {
+      var loggedIn = 'true';
+      var userId = '548263';
+      var props = { logged_in: loggedIn};
+
+      if (userId) {
+        window.analytics.identify(userId, props, opts);
+      } else {
+        window.analytics.identify(props, opts);
+      }
+    }
+
+    function windowAnalyticsPage(opts) {
+      window.analytics.page('page_load', {
+        category: 'editor',
+        env: 'production'
+      }, opts );
+    }
+
+    function backfillIntercom() {
+      var opts = {
+        integrations: {
+          All: false,
+          Intercom: true,
+        }
+      };
+
+      windowAnalyticsIdentify(opts);
+    }
+
+    function processBackendAnalyticsEvents(events) {
+      for (var i=0; i<events.length; i++) {
+        var e = events[i];
+        window.analytics.track(e[0], e[1]);
+      }
+    }
+
+      window.analytics.load('xGB0FehG8nsRd4E74Hp68hvCbaMGgd9a');
+
+    windowAnalyticsIdentify(analyticsOpts);
+    windowAnalyticsPage(analyticsOpts);
+    window.analyticsEvents = [];
+    processBackendAnalyticsEvents(window.analyticsEvents);
+
+
+  }}();
+</script>
+
+  
+
+    <script src="//app-assets.mode.com/assets/external-64fbc0dccbe8c5ba445c823d47faaa3e33029d34a1b39e485b058006ec519f97.js" debug="false" ng-csp="true"></script>
+    <script src="//app-assets.mode.com/assets/application-f9610278a3ec55761e6512590e8f922e24626d7b967e5469240befca1195ee9f.js" debug="false" ng-csp="true"></script>
+
+  <!-- Processed by rails controller -->
+  <script src="https://app-assets.mode.com/assets/runtime.b81add951fba764bd227.js" ></script>
+  <script src="https://app-assets.mode.com/assets/polyfills-es5.f3232a637184285dd8e7.js" ></script>
+  <script src="https://app-assets.mode.com/assets/polyfills.414e50ae5aea28532a37.js" ></script>
+  <script src="https://app-assets.mode.com/assets/main.74d84f18eafb18e4ee00.js" defer="defer"></script>
+
+</head>
+
+<body  class="layout-fluid editor-page fixed-header" mode-app="mode.editor">
+  
+
+  <div id="site-main">
+    
+
+
+    <div class="">
+      <mode-root></mode-root>
+      <mode-root></mode-root>
+
+
+    </div>
+  </div>
+
+  
+
+  
+  <toast class="toast-fixed-header"></toast>
+</body>
+</html>
